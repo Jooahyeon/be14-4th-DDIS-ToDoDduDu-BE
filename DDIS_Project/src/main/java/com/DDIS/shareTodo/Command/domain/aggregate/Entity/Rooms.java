@@ -17,7 +17,7 @@ import java.util.List;
 @Table(name = "rooms")
 public class Rooms {
     @Id
-    @Versi
+//    @Versi
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "room_num")
     private Long roomNum;
