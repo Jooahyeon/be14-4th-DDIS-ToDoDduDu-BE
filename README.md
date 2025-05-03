@@ -66,8 +66,6 @@
   #### 회원가입 화면
  ![회원가입](https://github.com/user-attachments/assets/2471a918-e3c4-4426-bfc3-ae09eab7ef68)
 
-
-
   #### 회원가입 이메일 인증 화면
 ![회원가입_이메일인증](https://github.com/user-attachments/assets/401e5996-2465-4f55-a416-a8c82a80924a)
 
@@ -75,86 +73,96 @@
 
 <details>
   <summary>메인 페이지</summary>
-  
+
+  #### 메인 페이지 
   ![메인페이지](https://github.com/user-attachments/assets/2b6d6236-f586-44ba-bf58-17ca53e9f74d)
 
 </details>
 
 <details>
-  <summary>로그인</summary>
+  <summary>모집 게시판</summary>
   
-  #### 로그인 화면
+#### 모집 게시판 조회
+![모집게시판](https://github.com/user-attachments/assets/cf7ebe08-8ba7-4364-8275-56275ced0188)
 
+#### 모집 게시글 조회
+![모집게시판_ 조회](https://github.com/user-attachments/assets/367ff2cb-0cfa-4c07-8301-32c61dd8d890)
 
-  #### 로그인 실패 화면
-  
+#### 모집 게시글 작성
+![모집게시판_작성](https://github.com/user-attachments/assets/c1921ee7-4080-4fea-8069-ad7916db1e33)
+
+#### 모집 게시글 - 참여 신청
+![모집게시판_신청](https://github.com/user-attachments/assets/17550946-52ed-4964-8296-86b1b576b6a7)
+
+#### 모집 게시글 - 공동TO-DO방 생성
+![모집게시판_공동방생성](https://github.com/user-attachments/assets/402d56d8-18f7-4659-826f-171345186ae3)
 
 </details>
 
 <details>
-  <summary>개인 투두</summary>
+  <summary>개인 TO-DO</summary>
   
-  #### 개인 투두
+#### 개인 TO-DO
 ![개인투두_조회](https://github.com/user-attachments/assets/6ba4cfb0-206f-4ea0-971a-d6d2109493c8)
 
-  #### 개인 투두 추가
+#### 개인 TO-DO 추가
 ![개인투두_투두추가](https://github.com/user-attachments/assets/5e36bad9-56d4-4762-b871-94436a9698af)
 
-  #### 개인 투두 삭제
+#### 개인 TO-DO 삭제
 ![개인투두_삭제png](https://github.com/user-attachments/assets/6c3042ca-973e-44a6-aa00-9343ee7683e0)
 
+#### 개인 TO-DO - 카테고리 생성
+![개인투도_카테고리생성](https://github.com/user-attachments/assets/071b064b-096e-4ef3-a5ac-ee3f756a2ed2)
+
+#### 개인 TO-DO - 카테고리 삭제
+![개인투두_카테고리삭제](https://github.com/user-attachments/assets/4ec4099c-b7d9-4d7b-93bf-c5959a23c03d)
+
+#### 개인 TO-DO - 캘린더 채우기 + 성취도 표 조회
+![캘린더 색깔 채우기 및 성취도 조회 ](https://github.com/user-attachments/assets/e3302d73-9e8d-4fc0-a6f7-11a77dd1452e)
+
+#### 개인 TO-DO - TO-DO 공개 설정 (전체 공개 or 팔로우 공개)
+![개인투두_팔로워공개로 변경](https://github.com/user-attachments/assets/be421940-bb28-49d7-847c-723825c5b425)
+
+#### 개인 TO-DO - 핀 설정
+![개인투두_핀설정](https://github.com/user-attachments/assets/ea1e85bc-d971-4c1f-ae1f-73b15134a7dc)
 
 </details>
 
 <details>
-  <summary>스타일 쉐어</summary>
+  <summary>공동 TO-DO</summary>
   
-  #### 스타일 쉐어 게시판 화면
-<img width="1146" alt="스크린샷 2025-04-19 22 04 16" src="https://github.com/user-attachments/assets/454eae00-12f5-4698-93f7-b0eec96d2a20" />
+#### 공동 TO-DO 조회
+![공통투두_조회](https://github.com/user-attachments/assets/cf12afc0-3100-4aae-bcbc-aca9e6c8f468)
 
-  #### 스타일 쉐어 게시물 화면
-<img width="1145" alt="스크린샷 2025-04-19 22 05 47" src="https://github.com/user-attachments/assets/9a8eca29-4ee4-44f3-88bb-02873c9c0975" />
+#### 공동 TO-DO - AI를 통한 TO-DO 생성
+![공통투두_AI를 통한 투두 생성](https://github.com/user-attachments/assets/43574dd1-d0ab-4ee5-9c6f-9cffcf535225)
 
+#### 공동 TO-DO - 사용자 TO-DO 직접 생성
+![공통투두_투두직접생성](https://github.com/user-attachments/assets/bc8b2d32-1799-4bbd-889f-194884eabc1a)
 
-  #### 스타일 쉐어 게시물 댓글 화면
-<img width="1147" alt="스크린샷 2025-04-19 22 07 02" src="https://github.com/user-attachments/assets/cde7f7dd-d594-4fb8-be27-f8832acee1e4" />
+#### 공동 TO-DO - Appove 등록
+![공동투두_Approve등록](https://github.com/user-attachments/assets/ae5c70a7-2970-4002-bf4d-4eddc3f46666)
 
+#### 공동 TO-DO 조회 - Appove 수정
+![공동투두_approve승인 수정](https://github.com/user-attachments/assets/71b98f42-3588-4d8c-b64c-254efa12954e)
 
-  #### 스타일 쉐어 게시물 등록 화면
-<img width="1146" alt="스크린샷 2025-04-19 22 22 40" src="https://github.com/user-attachments/assets/ffec02ca-3129-4f84-9751-1ee5e3711bef" />
+#### 공동 TO-DO - 달력 채우기 및 표 성취도 조회
+![공동투두_달력채우기 및 성취도 조회](https://github.com/user-attachments/assets/955d4942-2687-41d6-ba73-b839bb4fabbf)
 
+#### 공동 TO-DO - 채팅
+![공통투두_채팅](https://github.com/user-attachments/assets/f8479d96-3db2-4b4b-83ec-19b0692a4f87)
 
 </details>
 
 
 <details>
-  <summary>마이페이지</summary>
+  <summary>회원 정보</summary>
   
-  #### 마이페이지 화면
-<img width="1152" alt="스크린샷 2025-04-19 22 00 18" src="https://github.com/user-attachments/assets/ec8e04af-46bf-4eba-be47-ac00e8372cf9" />
+#### 로그인
+![로그인](https://github.com/user-attachments/assets/dfb9e957-03d4-40f0-89a9-058f3a5ad920)
 
-  #### 회원정보 수정 화면
-<img width="1149" alt="스크린샷 2025-04-19 22 01 10" src="https://github.com/user-attachments/assets/dd910f46-2ccf-4ec7-870e-0dc97d62dadb" />
-
-  #### 회원정보 수정 성공 화면
-<img width="1150" alt="스크린샷 2025-04-19 22 01 27" src="https://github.com/user-attachments/assets/80fe1850-2a3e-4d5b-a7ac-a21af59681f2" />
-
-  #### 나의 활동 기록
-<img width="1147" alt="스크린샷 2025-04-19 22 02 39" src="https://github.com/user-attachments/assets/c8ffa48a-48ed-41ae-bd53-44e3dc6e2930" />
-
-  #### 로그아웃
-<img width="1150" alt="스크린샷 2025-04-19 22 24 01" src="https://github.com/user-attachments/assets/a1440732-fe53-4db6-b6ac-5f857129f3e4" />
-
-</details>
-
-<details>
-  <summary>공통 레이아웃</summary>
-  
-  #### 헤더
-<img width="1150" alt="스크린샷 2025-04-19 22 16 09" src="https://github.com/user-attachments/assets/5816c181-b548-4e0c-ae50-58fd4cb6e31a" />
-
-  #### 푸터
-<img width="1150" alt="스크린샷 2025-04-19 22 16 30" src="https://github.com/user-attachments/assets/9e496558-c5e5-4546-a992-91be6914d73c" />
+#### 회원정보 수정 화면
+![프로필_회원정보수정](https://github.com/user-attachments/assets/69bb354e-9099-4115-85a0-13a86724f8cc)
 
 </details>
 
