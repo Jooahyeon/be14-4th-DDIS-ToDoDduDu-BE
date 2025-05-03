@@ -10,14 +10,18 @@
 <center>
    ## 👥 Team Members
    
-   | 이름 | GitHub | 이메일 |
-   |------|--------|--------|
-   | 이성준 | [](https://github.com/) |  |
-   | 김OO | [@github-id1](https://github.com/github-id1) | email1@example.com |
-   | 박OO | [@github-id2](https://github.com/github-id2) | email2@example.com |
-   | 최OO | [@github-id3](https://github.com/github-id3) | email3@example.com |
-   | 정OO | [@github-id4](https://github.com/github-id4) | email4@example.com |
-   | 한OO | [@github-id5](https://github.com/github-id5) | email5@example.com |
+
+## 👥 Team Members
+
+| [![이성준](https://avatars.githubusercontent.com/u/00000000?s=100)](https://github.com/) | [![김OO](https://avatars.githubusercontent.com/u/11111111?s=100)](https://github.com/github-id1) | [![박OO](https://avatars.githubusercontent.com/u/22222222?s=100)](https://github.com/github-id2) |
+|:--:|:--:|:--:|
+| 이성준 | 김OO | 박OO |
+| [@1214alex](https://github.com/tommy8969) | [@github-id1](https://github.com/github-id1) | [@github-id2](https://github.com/github-id2) |
+
+| [![최OO](https://avatars.githubusercontent.com/u/33333333?s=100)](https://github.com/github-id3) | [![정OO](https://avatars.githubusercontent.com/u/44444444?s=100)](https://github.com/github-id4) | [![한OO](https://avatars.githubusercontent.com/u/55555555?s=100)](https://github.com/github-id5) |
+|:--:|:--:|:--:|
+| 최OO | 정OO | 한OO |
+| [@github-id3](https://github.com/github-id3) | [@github-id4](https://github.com/github-id4) | [@github-id5](https://github.com/github-id5) |
 
 
 </center>
