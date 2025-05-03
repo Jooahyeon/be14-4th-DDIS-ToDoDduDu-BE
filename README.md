@@ -95,26 +95,32 @@
 
 📄 프로젝트 문서 모음
 
-
-🎯 WBS
+<details>
+   <summary>🎯 WBS</summary>
 
 
 ![image](https://github.com/user-attachments/assets/e1c450a4-9a73-409f-b32f-8e0871d19266)
+</details>
+<details>
+   
 
-
-🧾 요구사항 명세서
+   <summary>🧾 요구사항 명세서</summary>
 
 
 ![image](https://github.com/user-attachments/assets/210b3112-034e-48d5-8d7f-c166ea02d518)
 
+</details>
+<details>
+   <summary>📑 플로우차트</summary>
+ 
+   ![image](https://github.com/user-attachments/assets/e0bd3534-d757-4225-9818-0ecd409344e4)
 
-📑 플로우차트
-
-
+</details>
 
 /docs/flowchart.png
 
-🧱 DDD 설계
+<details>
+   <summary>🧱 DDD 설계</summary>
 
 
 ![image](https://github.com/user-attachments/assets/01c87105-649e-4f58-a5f2-49d0592925b8)
@@ -122,13 +128,13 @@
 
 ![image](https://github.com/user-attachments/assets/f28c8214-c184-4b2b-9d2e-3c62aab0a0b2)
 
-
-
-🧮 DB 모델링 (ERD)
+</details>
+<details>
+   <summary>🧮 DB 모델링 (ERD)</summary>
 
 
 ![image](https://github.com/user-attachments/assets/9aa2ce12-7f4f-4cac-b511-dae18454da66)
-
+</details>
 
 
 🎨 UI/UX 설계
