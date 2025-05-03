@@ -87,6 +87,8 @@
 
 ### 🎨 Design
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![draw.io](https://img.shields.io/badge/draw.io-F08705?style=for-the-badge&logo=diagramsdotnet&logoColor=white)
+![DA#](https://img.shields.io/badge/DA%23-ERD%20Modeling-005CA9?style=for-the-badge)
 
 ### 🧪 DevOps / Tools
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
