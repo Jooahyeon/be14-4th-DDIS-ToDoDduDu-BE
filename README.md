@@ -13,7 +13,7 @@
 
 ## 👥 Team Members
 
-| | [![이성준] ![my-notion-face-portrait](https://github.com/user-attachments/assets/c878ec33-a47f-4407-a037-2589a0fa5785) |  | [![김OO](https://avatars.githubusercontent.com/u/11111111?s=100)](https://github.com/github-id1) | [![박OO](https://avatars.githubusercontent.com/u/22222222?s=100)](https://github.com/github-id2) |
+| [![이성준] ![my-notion-face-portrait](https://github.com/user-attachments/assets/c878ec33-a47f-4407-a037-2589a0fa5785) | [![김OO](https://avatars.githubusercontent.com/u/11111111?s=100)](https://github.com/github-id1) | [![박OO](https://avatars.githubusercontent.com/u/22222222?s=100)](https://github.com/github-id2) |
 |:--:|:--:|:--:|
 | 이성준 | 강이도은 | 고도연 |
 | [@1214alex](https://github.com/1214alex) | [@github-id1](https://github.com/github-id1) | [@github-id2](https://github.com/github-id2) |
