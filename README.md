@@ -420,25 +420,6 @@
 
 
 
-💡 UI 기획서
-
-컴포넌트 스타일, 색상 가이드
-
-/docs/ui-guide.md
-
-🧭 사용자 플로우
-
-유저 시나리오 기반 인터랙션 흐름
-
-/docs/userflow.md
-
-🔌 API 명세 & 테스트
-
-문서명
-
-설명
-
-링크
 
 📘 API 명세서
 
@@ -446,26 +427,110 @@
 
 /docs/api-spec.yaml
 
-🧪 API 테스트 로그
-
-Postman / Swagger 기반 테스트 결과
-
-/docs/api-test-result.pdf
 
 
-🚀 배포 및 인프라
 
-문서명
-
-설명
-
-링크
 
 🧱 CI/CD 설계
+---
+<details>
+   <summary>아키텍쳐</summary>
+   
+   ![KakaoTalk_20250503_231157971](https://github.com/user-attachments/assets/c7a648a5-49ae-4fee-ac6a-0062bba554c0)
 
-GitHub Actions 기반 자동화 흐름
+</details>
 
-/docs/cicd.md
+<details>
+   <summary>젠킨스 파이프라인</summary>
+   ```JAVA
+   
+   pipeline {
+    agent any
+
+    tools {
+        gradle 'gradle'
+        jdk 'openJDK17'
+    }
+
+    environment {
+        GITHUB_URL = 'https://github.com/TEAM-DDIS/be14-4th-DDIS-BE.git'
+    }
+
+    stages {
+        stage('Preparation') {
+            steps {
+                script {
+                    if (isUnix()) {
+                        sh 'docker --version'
+                    } else {
+                        bat 'docker --version'
+                    }
+                }
+            }
+        }
+
+        stage('Source Build') {
+            steps {
+                git branch: 'dev', url: "${env.GITHUB_URL}"
+                script {
+                    if (isUnix()) {
+                        sh "chmod +x ./DDIS_Project/gradlew"
+                        sh "./DDIS_Project/gradlew clean build"
+                    } else {
+                        bat "cd DDIS_Project && gradlew.bat clean build -x test"
+                    }
+                }
+            }
+        }
+
+        stage('Container Build and Push') {
+            steps {
+                script {
+                    withCredentials([usernamePassword(credentialsId: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                        if (isUnix()) {
+                            sh "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number} DDIS_Project"
+                            sh "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:latest DDIS_Project"
+                            sh "docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}"
+                            sh "docker push ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number}"
+                            sh "docker push ${DOCKER_USER}/k8s_ddis_boot:latest"
+                        } else {
+                            bat "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number} DDIS_Project"
+                            bat "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:latest DDIS_Project"
+                            bat "docker login -u %DOCKER_USER% -p %DOCKER_PASS%"
+                            bat "docker push ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number}"
+                            bat "docker push ${DOCKER_USER}/k8s_ddis_boot:latest"
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            script {
+                if (isUnix()) {
+                    sh 'docker logout'
+                } else {
+                    bat 'docker logout'
+                }
+            }
+        }
+        success {
+            echo 'Pipeline succeeded!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
+    }
+}
+```
+
+</details>
+<details>
+   <summary>아르고 파이프라인</summary>
+
+</details>
 
 🐳 Docker/Compose 설정
 
