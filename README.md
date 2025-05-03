@@ -176,6 +176,7 @@
 링크
 
 🖼️ 와이어프레임
+
 <details>
    <sumamry>로그인</sumamry>
    
@@ -185,14 +186,42 @@
 
 <details>
    <sumamry>아이디 찾기</sumamry>
+
+   ![image](https://github.com/user-attachments/assets/e117e946-5eb7-4bb9-9947-3933aef439f9)
+
    
-   ![image](https://github.com/user-attachments/assets/0f252bb4-2aa8-459e-8c4a-cf12f8bde688)
    
 </details>
 
-![image](https://github.com/user-attachments/assets/0fe5bccf-9087-482f-a6d1-e5bbd4136ced)
+<details>
+   <summary>비밀번호 찾기</summary>
+   
+![image](https://github.com/user-attachments/assets/ac56aebf-a342-41a3-8f9d-b4e7c5098648)
 
+   
+</details>
+<details>
+   <summary>회원가입</summary>
+   
+   ![image](https://github.com/user-attachments/assets/fae950e9-7baf-470c-8bc8-86cbf1f0ecda)
+
+</details>
+
+
+<details>
+   <summary>개인정보 수정</summary>
+
+   ![image](https://github.com/user-attachments/assets/94d78326-f284-4d4f-ae71-c14a57398df0)
+
+</details>
+
+<details>
+   <summary>팔로잉</summary>
+   
 ![image](https://github.com/user-attachments/assets/6c31b9bb-2f68-4a68-ad89-14be49827a3b)
+   
+</details>
+
 
 ![image](https://github.com/user-attachments/assets/fd67a622-e05f-4137-9f10-08a17fde3d2b)
 
