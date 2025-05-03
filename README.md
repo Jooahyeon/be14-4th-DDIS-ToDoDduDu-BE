@@ -175,9 +175,10 @@
 
 링크
 
-🖼️ 와이어프레임
-
 <details>
+   <summary>🖼️ 와이어프레임 </summary>
+
+  <details>
    <summary>로그인</summary>
    
    ![image](https://github.com/user-attachments/assets/0f252bb4-2aa8-459e-8c4a-cf12f8bde688)
@@ -410,6 +411,9 @@
 ![image](https://github.com/user-attachments/assets/80b26efc-6c9e-4b8c-a286-7a196945cad4)
    
 </details>
+
+</details>
+
 
 
 
