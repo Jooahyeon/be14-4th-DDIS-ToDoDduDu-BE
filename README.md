@@ -176,7 +176,19 @@
 링크
 
 🖼️ 와이어프레임
-![image](https://github.com/user-attachments/assets/0f252bb4-2aa8-459e-8c4a-cf12f8bde688)
+<details>
+   <sumamry>로그인</sumamry>
+   
+   ![image](https://github.com/user-attachments/assets/0f252bb4-2aa8-459e-8c4a-cf12f8bde688)
+   
+</details>
+
+<details>
+   <sumamry>아이디 찾기</sumamry>
+   
+   ![image](https://github.com/user-attachments/assets/0f252bb4-2aa8-459e-8c4a-cf12f8bde688)
+   
+</details>
 
 ![image](https://github.com/user-attachments/assets/0fe5bccf-9087-482f-a6d1-e5bbd4136ced)
 
@@ -188,8 +200,39 @@
 
 ![image](https://github.com/user-attachments/assets/68bf4cfb-7eb6-4dca-9db3-1e791ceb2958)
 
-![image](https://github.com/user-attachments/assets/5a870105-bcd9-42cb-86ad-f419fbca7a82)
+![image](https://github.com/user-attachments/assets/45dc297c-b497-41fd-a216-ff9693c091e1)
 
+![image](https://github.com/user-attachments/assets/9af38271-9871-4427-8b46-e09c9ae0023b)
+
+![image](https://github.com/user-attachments/assets/1d4e0f07-e775-4d9c-9b8a-2c36cf741f96)
+
+![image](https://github.com/user-attachments/assets/c40f4754-987d-4bf2-bcd0-e78b05b646a4)
+
+![image](https://github.com/user-attachments/assets/d28f9977-3974-4912-8b66-f094869401c6)
+
+![image](https://github.com/user-attachments/assets/8d85927f-e764-4359-af69-adf528c332f1)
+
+![image](https://github.com/user-attachments/assets/462459e4-b019-4f62-b3a6-0667d2a82402)
+
+![image](https://github.com/user-attachments/assets/d433a1e7-1978-4560-a6c8-1e4064ea9422)
+
+![image](https://github.com/user-attachments/assets/50cdb4e8-8227-48a6-87ca-80b08295b3c2)
+
+![image](https://github.com/user-attachments/assets/7c71fd5e-696b-4156-ba71-b0c28f50875b)
+
+![image](https://github.com/user-attachments/assets/1cbd2de5-5606-4626-86ad-8eb8aef06adb)
+
+![image](https://github.com/user-attachments/assets/c14398e3-d9e1-4add-93e0-f52c5175e21c)
+
+![image](https://github.com/user-attachments/assets/d4d6c6f3-c4ef-4521-a977-40fd9f947086)
+
+![image](https://github.com/user-attachments/assets/6770f08f-8340-4b87-9501-f795c1f71007)
+
+![image](https://github.com/user-attachments/assets/9905e26c-8c06-45aa-b10a-b05e837b9b16)
+
+![image](https://github.com/user-attachments/assets/a3aae482-3258-4fa5-9656-4dff94afed66)
+
+![image](https://github.com/user-attachments/assets/80b26efc-6c9e-4b8c-a286-7a196945cad4)
 
 
 💡 UI 기획서
@@ -224,11 +267,6 @@ Postman / Swagger 기반 테스트 결과
 
 /docs/api-test-result.pdf
 
-🔐 인증 흐름도
-
-로그인, 토큰 발급/만료/갱신 처리 구조
-
-/docs/auth-flow.md
 
 🚀 배포 및 인프라
 
