@@ -294,26 +294,126 @@
 ![image](https://github.com/user-attachments/assets/462459e4-b019-4f62-b3a6-0667d2a82402)
 </details>
 
+<details>
+   <summary>공지사항 조회 - 회원</summary>
 
 ![image](https://github.com/user-attachments/assets/d433a1e7-1978-4560-a6c8-1e4064ea9422)
+   
+</details>
+
+<details>
+   <summary>공지사항 조회 - 관리자</summary>
 
 ![image](https://github.com/user-attachments/assets/50cdb4e8-8227-48a6-87ca-80b08295b3c2)
+   ㅍ  
+</details>
+
+<details>
+   <summary>DM 버튼</summary>
+
+![image](https://github.com/user-attachments/assets/1d4e0f07-e775-4d9c-9b8a-2c36cf741f96)
+   
+</details>
+
+<details>
+   <summary>카테고리 설정</summary>
+
+![image](https://github.com/user-attachments/assets/c40f4754-987d-4bf2-bcd0-e78b05b646a4)
+   
+</details>
+
+<details>
+   <summary>공동 TO-DO 생성</summary>
+   
+![image](https://github.com/user-attachments/assets/d28f9977-3974-4912-8b66-f094869401c6)
+   
+</details>
+
+
+<details>
+   <summary>공동 TO-DO APPROVE 요청</summary>
+   
+![image](https://github.com/user-attachments/assets/8d85927f-e764-4359-af69-adf528c332f1)
+   
+</details>
+
+<details>
+   <summary>모집게시판 조회</summary>
+   
+![image](https://github.com/user-attachments/assets/462459e4-b019-4f62-b3a6-0667d2a82402)
+</details>
+
+<details>
+   <summary>공지사항 조회 - 회원</summary>
+
+![image](https://github.com/user-attachments/assets/d433a1e7-1978-4560-a6c8-1e4064ea9422)
+   
+</details>
+
+<details>
+   <summary>공지사항 조회 - 관리자</summary>
+
+![image](https://github.com/user-attachments/assets/50cdb4e8-8227-48a6-87ca-80b08295b3c2)
+   
+</details>
+
+<details>
+   <summary>공지사항 작성 - 관리자</summary>
 
 ![image](https://github.com/user-attachments/assets/7c71fd5e-696b-4156-ba71-b0c28f50875b)
+   
+</details>
 
+<details>
+   <summary>공지사항 수정 - 관리자</summary>
+   
 ![image](https://github.com/user-attachments/assets/1cbd2de5-5606-4626-86ad-8eb8aef06adb)
 
+</details>
+
+<details>
+   <summary>공지사항 삭제 - 관리자</summary>
+
 ![image](https://github.com/user-attachments/assets/c14398e3-d9e1-4add-93e0-f52c5175e21c)
+</details>
+
+<details>
+   <summary>문의사항 조회 - 회원 </summary>
 
 ![image](https://github.com/user-attachments/assets/d4d6c6f3-c4ef-4521-a977-40fd9f947086)
+</details>
+
+<details>
+   <summary>문의사항 조회 - 관리자</summary>
 
 ![image](https://github.com/user-attachments/assets/6770f08f-8340-4b87-9501-f795c1f71007)
+</details>
 
-![image](https://github.com/user-attachments/assets/9905e26c-8c06-45aa-b10a-b05e837b9b16)
+<details>
+   <summary>문의사항 수정 - 관리자</summary>
+
+   ![image](https://github.com/user-attachments/assets/9905e26c-8c06-45aa-b10a-b05e837b9b16)
+  
+</details>
+
+<details>
+   <summary>문의사항 삭제 - 관리자</summary>
 
 ![image](https://github.com/user-attachments/assets/a3aae482-3258-4fa5-9656-4dff94afed66)
+   
+   
+</details>
+
+<details>
+   <summary>문의사항 답변 - 관리자</summary>
 
 ![image](https://github.com/user-attachments/assets/80b26efc-6c9e-4b8c-a286-7a196945cad4)
+   
+</details>
+
+
+
+
 
 
 💡 UI 기획서
