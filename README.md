@@ -13,11 +13,10 @@
 
 ## 👥 Team Members
 
-| 
-[![이성준] ![my-notion-face-portrait](https://github.com/user-attachments/assets/c878ec33-a47f-4407-a037-2589a0fa5785) | 
+| [![이성준] ![my-notion-face-portrait](https://github.com/user-attachments/assets/c878ec33-a47f-4407-a037-2589a0fa5785) | 
 | 이성준 |
 | [@1214alex](https://github.com/1214alex) |
-[![김OO](https://avatars.githubusercontent.com/u/11111111?s=100)](https://github.com/github-id1) | 
+| [![김OO](https://avatars.githubusercontent.com/u/11111111?s=100)](https://github.com/github-id1) | 
 
 | 김OO |
 | [@github-id1](https://github.com/github-id1) |
