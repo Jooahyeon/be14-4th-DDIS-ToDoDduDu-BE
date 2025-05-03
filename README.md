@@ -8,7 +8,16 @@
 ### 👥 Meet the ** DDIS ** Team Members
 
 <center>
-
+   ## 👥 Team Members
+   
+   | 이름 | GitHub | 이메일 |
+   |------|--------|--------|
+   | 이성준 | [](https://github.com/) |  |
+   | 김OO | [@github-id1](https://github.com/github-id1) | email1@example.com |
+   | 박OO | [@github-id2](https://github.com/github-id2) | email2@example.com |
+   | 최OO | [@github-id3](https://github.com/github-id3) | email3@example.com |
+   | 정OO | [@github-id4](https://github.com/github-id4) | email4@example.com |
+   | 한OO | [@github-id5](https://github.com/github-id5) | email5@example.com |
 
 
 </center>
