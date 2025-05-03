@@ -176,10 +176,21 @@
 링크
 
 🖼️ 와이어프레임
+![image](https://github.com/user-attachments/assets/0f252bb4-2aa8-459e-8c4a-cf12f8bde688)
 
-페이지별 기본 레이아웃 설계
+![image](https://github.com/user-attachments/assets/0fe5bccf-9087-482f-a6d1-e5bbd4136ced)
 
-/docs/wireframe.png
+![image](https://github.com/user-attachments/assets/6c31b9bb-2f68-4a68-ad89-14be49827a3b)
+
+![image](https://github.com/user-attachments/assets/fd67a622-e05f-4137-9f10-08a17fde3d2b)
+
+![image](https://github.com/user-attachments/assets/ef8ccc64-e6f7-4db9-9c4e-27ded497fac7)
+
+![image](https://github.com/user-attachments/assets/68bf4cfb-7eb6-4dca-9db3-1e791ceb2958)
+
+![image](https://github.com/user-attachments/assets/5a870105-bcd9-42cb-86ad-f419fbca7a82)
+
+
 
 💡 UI 기획서
 
