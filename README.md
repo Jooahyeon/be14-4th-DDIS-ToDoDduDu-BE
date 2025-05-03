@@ -59,47 +59,88 @@
 ---
 
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-### 🚀 Frontend
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
-![Pinia](https://img.shields.io/badge/Pinia-ffe600?style=for-the-badge&logo=pinia&logoColor=black)
-![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge)
-![Socket.IO](https://img.shields.io/badge/Socket.IO-000000?style=for-the-badge&logo=socket.io)
-![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
+> 프론트엔드(Vue.js)와 백엔드(Spring Boot)가 완전히 분리된 구조이며,  
+> 실시간 채팅, 통계 시각화, JWT 인증, CI/CD 파이프라인 및 GitOps 배포까지 통합된 풀스택 프로젝트입니다.
 
-### ⚙️ Backend
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![JPA](https://img.shields.io/badge/JPA-007ACC?style=for-the-badge)
-![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
-![MyBatis](https://img.shields.io/badge/MyBatis-3D2C00?style=for-the-badge)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-4CAF50?style=for-the-badge&logo=springsecurity&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
-![STOMP](https://img.shields.io/badge/STOMP-over_WebSocket-61DAFB?style=for-the-badge)
+---
 
-### 🗃 Database
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-
-### 🎨 Design
+### 🎨 Design & Modeling
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![draw.io](https://img.shields.io/badge/draw.io-F08705?style=for-the-badge&logo=diagramsdotnet&logoColor=white)
-![DA#](https://img.shields.io/badge/DA%23-ERD%20Modeling-005CA9?style=for-the-badge)
+![DA#](https://img.shields.io/badge/DA%23-ERD--Modeling-005CA9?style=for-the-badge)
 
-### 🧪 DevOps / Tools
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Argo CD](https://img.shields.io/badge/Argo--CD-1976D2?style=for-the-badge&logo=argo&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white)
-![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
+---
+
+### 🚀 Frontend
+![Vue.js](https://img.shields.io/badge/Vue.js-3.x-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Pinia](https://img.shields.io/badge/Pinia-State--Mgmt-ffe600?style=for-the-badge&logo=pinia&logoColor=black)
+![Vue Router](https://img.shields.io/badge/Vue--Router-SPA-42B983?style=for-the-badge)
+![Axios](https://img.shields.io/badge/Axios-REST--API-5A29E4?style=for-the-badge)
+![v-calendar](https://img.shields.io/badge/V--Calendar-Date--Picker-42b883?style=for-the-badge)
+![dayjs](https://img.shields.io/badge/Day.js-Date--Handling-ffb300?style=for-the-badge)
+![vuedraggable](https://img.shields.io/badge/VueDraggable-Drag%20%26%20Drop-00c1d4?style=for-the-badge)
+![Chart.js](https://img.shields.io/badge/Chart.js-Stats--Chart-FF6384?style=for-the-badge&logo=chartdotjs)
+![ECharts](https://img.shields.io/badge/ECharts-Data--Viz-4A92E2?style=for-the-badge&logo=apacheecharts)
+![Socket.IO](https://img.shields.io/badge/Socket.IO-Real--Time-000000?style=for-the-badge&logo=socket.io)
+![STOMP.js](https://img.shields.io/badge/STOMP.js-Over--WebSocket-6e00ff?style=for-the-badge)
+![Vite](https://img.shields.io/badge/Vite-Bundler-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
+---
+
+### ⚙️ Backend
+![Java](https://img.shields.io/badge/Java-17-007396?style=for-the-badge&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-Auth-4CAF50?style=for-the-badge&logo=springsecurity)
+![JWT](https://img.shields.io/badge/JJWT-Token--Auth-000000?style=for-the-badge&logo=jsonwebtokens)
+![Spring WebSocket](https://img.shields.io/badge/Spring--WebSocket-Real--Time-6DB33F?style=for-the-badge)
+![Freemarker](https://img.shields.io/badge/Freemarker-Template--Engine-1C7EBB?style=for-the-badge)
+![WebJars](https://img.shields.io/badge/WebJars-Static--Assets-4B4B4B?style=for-the-badge)
+![Gson](https://img.shields.io/badge/Gson-JSON--Parser-E64A19?style=for-the-badge)
+![Spring Mail](https://img.shields.io/badge/Spring--Mail-Email--Auth-C80000?style=for-the-badge)
+![Spring Validation](https://img.shields.io/badge/Spring--Validation-Form--Check-0d9488?style=for-the-badge)
+![Spring Devtools](https://img.shields.io/badge/Spring--Devtools-Hot--Reload-FF5722?style=for-the-badge)
+
+---
+
+### 🧩 ORM & DB Frameworks
+![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-ORM-59666C?style=for-the-badge)
+![Hibernate](https://img.shields.io/badge/Hibernate-ORM-59666C?style=for-the-badge&logo=hibernate)
+![MyBatis](https://img.shields.io/badge/MyBatis-SQL--Mapper-3D2C00?style=for-the-badge)
+![ModelMapper](https://img.shields.io/badge/ModelMapper-DTO--Mapper-0d9488?style=for-the-badge)
+
+---
+
+### 🗃 Database
+![MariaDB](https://img.shields.io/badge/MariaDB-Relational--DB-003545?style=for-the-badge&logo=mariadb)
+![Redis](https://img.shields.io/badge/Redis-Session--Cache-DC382D?style=for-the-badge&logo=redis)
+
+---
+
+### 🧪 Testing
+![JUnit5](https://img.shields.io/badge/JUnit5-Unit--Test-25A162?style=for-the-badge&logo=junit5)
+![Spring Boot Test](https://img.shields.io/badge/Spring--Boot--Test-Integration--Test-6DB33F?style=for-the-badge)
+![MyBatis Test](https://img.shields.io/badge/MyBatis--Test-Mapper--Validation-FF6600?style=for-the-badge)
+![Spring Security Test](https://img.shields.io/badge/Spring--Security--Test-Mock--Auth-43A047?style=for-the-badge)
+
+---
+
+### ⚙️ DevOps / CI/CD
+![Jenkins](https://img.shields.io/badge/Jenkins-CI--Pipeline-D24939?style=for-the-badge&logo=jenkins)
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes)
+![Argo CD](https://img.shields.io/badge/ArgoCD-GitOps--Deploy-1976D2?style=for-the-badge&logo=argo)
+
+---
+
+### 🛠 Tools
+![Git](https://img.shields.io/badge/Git-Version--Control-F05032?style=for-the-badge&logo=git)
+![GitHub](https://img.shields.io/badge/GitHub-Repo--Hosting-181717?style=for-the-badge&logo=github)
+![IntelliJ](https://img.shields.io/badge/IntelliJ--IDEA-Java--IDE-000000?style=for-the-badge&logo=intellijidea)
+![VSCode](https://img.shields.io/badge/VS%20Code-Frontend--Dev-007ACC?style=for-the-badge&logo=visualstudiocode)
+![Notion](https://img.shields.io/badge/Notion-Docs--&--WBS-000000?style=for-the-badge&logo=notion)
 
 
 
