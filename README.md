@@ -178,14 +178,14 @@
 🖼️ 와이어프레임
 
 <details>
-   <sumamry>로그인</sumamry>
+   <summary>로그인</summary>
    
    ![image](https://github.com/user-attachments/assets/0f252bb4-2aa8-459e-8c4a-cf12f8bde688)
    
 </details>
 
 <details>
-   <sumamry>아이디 찾기</sumamry>
+   <summary>아이디 찾기</summary>
 
    ![image](https://github.com/user-attachments/assets/e117e946-5eb7-4bb9-9947-3933aef439f9)
 
@@ -218,30 +218,82 @@
 <details>
    <summary>팔로잉</summary>
    
-![image](https://github.com/user-attachments/assets/6c31b9bb-2f68-4a68-ad89-14be49827a3b)
+   ![image](https://github.com/user-attachments/assets/fd67a622-e05f-4137-9f10-08a17fde3d2b)
+   
+</details>
+
+<details>
+   <summary>신고</summary>
+
+![image](https://github.com/user-attachments/assets/ef8ccc64-e6f7-4db9-9c4e-27ded497fac7)
+   
+</details>
+
+<details>
+   <summary>팔로워 조회</summary>
+
+![image](https://github.com/user-attachments/assets/68bf4cfb-7eb6-4dca-9db3-1e791ceb2958)
    
 </details>
 
 
-![image](https://github.com/user-attachments/assets/fd67a622-e05f-4137-9f10-08a17fde3d2b)
+<details>
+   
+   <summary>팔로잉 조회</summary>
+   
+   ![image](https://github.com/user-attachments/assets/45dc297c-b497-41fd-a216-ff9693c091e1)
+   
+</details>
 
-![image](https://github.com/user-attachments/assets/ef8ccc64-e6f7-4db9-9c4e-27ded497fac7)
+<details>
+   <summary>todo추가</summary>
+   
+   ![image](https://github.com/user-attachments/assets/c6c7969d-0f8a-49bc-8905-b8a6cc74c654)
 
-![image](https://github.com/user-attachments/assets/68bf4cfb-7eb6-4dca-9db3-1e791ceb2958)
+</details>
 
-![image](https://github.com/user-attachments/assets/45dc297c-b497-41fd-a216-ff9693c091e1)
+<details>
+   <summary>todo 미완료</summary>
 
 ![image](https://github.com/user-attachments/assets/9af38271-9871-4427-8b46-e09c9ae0023b)
+   
+</details>
+
+<details>
+   <summary>DM 버튼</summary>
 
 ![image](https://github.com/user-attachments/assets/1d4e0f07-e775-4d9c-9b8a-2c36cf741f96)
+   
+</details>
+
+<details>
+   <summary>카테고리 설정</summary>
 
 ![image](https://github.com/user-attachments/assets/c40f4754-987d-4bf2-bcd0-e78b05b646a4)
+   
+</details>
 
+<details>
+   <summary>공동 TO-DO 생성</summary>
+   
 ![image](https://github.com/user-attachments/assets/d28f9977-3974-4912-8b66-f094869401c6)
+   
+</details>
 
+
+<details>
+   <summary>공동 TO-DO APPROVE 요청</summary>
+   
 ![image](https://github.com/user-attachments/assets/8d85927f-e764-4359-af69-adf528c332f1)
+   
+</details>
 
+<details>
+   <summary>모집게시판 조회</summary>
+   
 ![image](https://github.com/user-attachments/assets/462459e4-b019-4f62-b3a6-0667d2a82402)
+</details>
+
 
 ![image](https://github.com/user-attachments/assets/d433a1e7-1978-4560-a6c8-1e4064ea9422)
 
