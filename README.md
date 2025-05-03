@@ -90,3 +90,127 @@
 
 - 기술 스택, 설치 방법, 실행 방법 등은 별도 섹션에 작성해주세요.
 - 협업자, 기여자 목록도 함께 정리하시면 좋습니다.
+
+---
+
+📄 프로젝트 문서 모음
+
+📚 기획 & 요구사항
+
+문서명
+
+설명
+
+링크
+
+🎯 WBS
+
+전체 개발 일정 및 태스크 구조
+
+/docs/wbs.pdf
+
+🧾 요구사항 명세서
+
+기능 정의, 예외처리 등 상세 요구사항
+
+/docs/requirements.md
+
+📑 플로우차트
+
+사용자 흐름, 데이터 흐름도
+
+/docs/flowchart.png
+
+🧱 DDD 설계
+
+도메인 모델, 어그리게잇, 서비스 계층 구조
+
+/docs/ddd.md
+
+🧮 DB 모델링 (ERD)
+
+테이블 관계도, 정규화, 제약조건
+
+/docs/db-modeling.png
+
+🎨 UI/UX 설계
+
+문서명
+
+설명
+
+링크
+
+🖼️ 와이어프레임
+
+페이지별 기본 레이아웃 설계
+
+/docs/wireframe.png
+
+💡 UI 기획서
+
+컴포넌트 스타일, 색상 가이드
+
+/docs/ui-guide.md
+
+🧭 사용자 플로우
+
+유저 시나리오 기반 인터랙션 흐름
+
+/docs/userflow.md
+
+🔌 API 명세 & 테스트
+
+문서명
+
+설명
+
+링크
+
+📘 API 명세서
+
+엔드포인트, 응답 구조, 인증 방식 등
+
+/docs/api-spec.yaml
+
+🧪 API 테스트 로그
+
+Postman / Swagger 기반 테스트 결과
+
+/docs/api-test-result.pdf
+
+🔐 인증 흐름도
+
+로그인, 토큰 발급/만료/갱신 처리 구조
+
+/docs/auth-flow.md
+
+🚀 배포 및 인프라
+
+문서명
+
+설명
+
+링크
+
+🧱 CI/CD 설계
+
+GitHub Actions 기반 자동화 흐름
+
+/docs/cicd.md
+
+🐳 Docker/Compose 설정
+
+실행 환경 컨테이너화 구성
+
+/deployment/docker-compose.yml
+
+☁️ 인프라 아키텍처
+
+BE, FE, DB, Reverse Proxy 등 구성도
+
+/docs/infra-architecture.png
+
+🛠️ 배포 가이드
+
+EC2, S3, Nginx 등 환경 세팅 방법
