@@ -60,80 +60,102 @@
 
 ## 🛠️ 주요 기능
 
-| 기능 영역 | 설명 |
-|-----------|------|
-| 🧑‍💼 **회원 관리** | 가입, 로그인, 정보수정, 탈퇴, 비밀번호 찾기 등 |
-| 📝 **모집 게시글** | 제목, 내용, 모집인원/기간 설정, 카테고리 선택 |
-| 🏠 **공동 To-do 방** | To-do 등록 및 참여 멤버 관리 |
-| ✅ **Approve 시스템** | 활동 인증 → 수락/반려 → 댓글 및 피드백 |
-| 📅 **통계/캘린더** | 주간/월간 달성률, 컬러링 피드백 |
-| 📣 **공지/문의** | 공지사항, 1:1 문의, 답변 기능 |
-| 🚨 **신고 시스템** | 게시글, 댓글, 계정 신고 및 관리자 처리 |
-| 👥 **팔로우 기능** | 팔로우/언팔로우/팔로워 삭제 |
-| 💬 **채팅 기능** | 공동방 채팅, DM 등 커뮤니케이션 기능 |
-
----
-
-## 🧩 서비스 차별화 전략
-
-| 전략 | 내용 |
-|-------|------|
-| 🔄 **공동 실천 중심 SNS** | 개인 To-do를 소셜화 → 참여 기반 동기부여 |
-| 👀 **Approve 중심 인증 구조** | 진정성 있는 활동 인증 + 피드백 |
-| 🎨 **통계 시각화 강화** | 참여율/달성률 시각화 → 즉각적 동기부여 |
-| 🛡️ **커뮤니티 운영 체계 완비** | 관리자 도구 (신고/정지/삭제)로 안정적 운영 |
-| 🤖 **AI To-do 추천 (계획)** | 사용자 관심 기반 맞춤 추천 기능 확장 |
-
----
-
-## 📎 기타
-
-- 기술 스택, 설치 방법, 실행 방법 등은 별도 섹션에 작성해주세요.
-- 협업자, 기여자 목록도 함께 정리하시면 좋습니다.
-
----
-
-📄 프로젝트 문서 모음
-
 <details>
-   <summary>🎯 WBS</summary>
+  <summary>회원가입</summary>
+
+  #### 회원가입 화면
+ ![회원가입](https://github.com/user-attachments/assets/2471a918-e3c4-4426-bfc3-ae09eab7ef68)
 
 
-![image](https://github.com/user-attachments/assets/e1c450a4-9a73-409f-b32f-8e0871d19266)
-</details>
-<details>
-   
 
-   <summary>🧾 요구사항 명세서</summary>
-
-
-![image](https://github.com/user-attachments/assets/210b3112-034e-48d5-8d7f-c166ea02d518)
-
-</details>
-<details>
-   <summary>📑 플로우차트</summary>
- 
-   ![image](https://github.com/user-attachments/assets/e0bd3534-d757-4225-9818-0ecd409344e4)
+  #### 회원가입 이메일 인증 화면
+![회원가입_이메일인증](https://github.com/user-attachments/assets/401e5996-2465-4f55-a416-a8c82a80924a)
 
 </details>
 
-/docs/flowchart.png
-
 <details>
-   <summary>🧱 DDD 설계</summary>
-
-
-![image](https://github.com/user-attachments/assets/01c87105-649e-4f58-a5f2-49d0592925b8)
-
-
-![image](https://github.com/user-attachments/assets/f28c8214-c184-4b2b-9d2e-3c62aab0a0b2)
+  <summary>메인 페이지</summary>
+  
+  ![메인페이지](https://github.com/user-attachments/assets/2b6d6236-f586-44ba-bf58-17ca53e9f74d)
 
 </details>
+
 <details>
-   <summary>🧮 DB 모델링 (ERD)</summary>
+  <summary>로그인</summary>
+  
+  #### 로그인 화면
 
 
-![image](https://github.com/user-attachments/assets/9aa2ce12-7f4f-4cac-b511-dae18454da66)
+  #### 로그인 실패 화면
+  
+
+</details>
+
+<details>
+  <summary>개인 투두</summary>
+  
+  #### 개인 투두
+![개인투두_조회](https://github.com/user-attachments/assets/6ba4cfb0-206f-4ea0-971a-d6d2109493c8)
+
+  #### 개인 투두 추가
+![개인투두_투두추가](https://github.com/user-attachments/assets/5e36bad9-56d4-4762-b871-94436a9698af)
+
+  #### 개인 투두 삭제
+![개인투두_삭제png](https://github.com/user-attachments/assets/6c3042ca-973e-44a6-aa00-9343ee7683e0)
+
+
+</details>
+
+<details>
+  <summary>스타일 쉐어</summary>
+  
+  #### 스타일 쉐어 게시판 화면
+<img width="1146" alt="스크린샷 2025-04-19 22 04 16" src="https://github.com/user-attachments/assets/454eae00-12f5-4698-93f7-b0eec96d2a20" />
+
+  #### 스타일 쉐어 게시물 화면
+<img width="1145" alt="스크린샷 2025-04-19 22 05 47" src="https://github.com/user-attachments/assets/9a8eca29-4ee4-44f3-88bb-02873c9c0975" />
+
+
+  #### 스타일 쉐어 게시물 댓글 화면
+<img width="1147" alt="스크린샷 2025-04-19 22 07 02" src="https://github.com/user-attachments/assets/cde7f7dd-d594-4fb8-be27-f8832acee1e4" />
+
+
+  #### 스타일 쉐어 게시물 등록 화면
+<img width="1146" alt="스크린샷 2025-04-19 22 22 40" src="https://github.com/user-attachments/assets/ffec02ca-3129-4f84-9751-1ee5e3711bef" />
+
+
+</details>
+
+
+<details>
+  <summary>마이페이지</summary>
+  
+  #### 마이페이지 화면
+<img width="1152" alt="스크린샷 2025-04-19 22 00 18" src="https://github.com/user-attachments/assets/ec8e04af-46bf-4eba-be47-ac00e8372cf9" />
+
+  #### 회원정보 수정 화면
+<img width="1149" alt="스크린샷 2025-04-19 22 01 10" src="https://github.com/user-attachments/assets/dd910f46-2ccf-4ec7-870e-0dc97d62dadb" />
+
+  #### 회원정보 수정 성공 화면
+<img width="1150" alt="스크린샷 2025-04-19 22 01 27" src="https://github.com/user-attachments/assets/80fe1850-2a3e-4d5b-a7ac-a21af59681f2" />
+
+  #### 나의 활동 기록
+<img width="1147" alt="스크린샷 2025-04-19 22 02 39" src="https://github.com/user-attachments/assets/c8ffa48a-48ed-41ae-bd53-44e3dc6e2930" />
+
+  #### 로그아웃
+<img width="1150" alt="스크린샷 2025-04-19 22 24 01" src="https://github.com/user-attachments/assets/a1440732-fe53-4db6-b6ac-5f857129f3e4" />
+
+</details>
+
+<details>
+  <summary>공통 레이아웃</summary>
+  
+  #### 헤더
+<img width="1150" alt="스크린샷 2025-04-19 22 16 09" src="https://github.com/user-attachments/assets/5816c181-b548-4e0c-ae50-58fd4cb6e31a" />
+
+  #### 푸터
+<img width="1150" alt="스크린샷 2025-04-19 22 16 30" src="https://github.com/user-attachments/assets/9e496558-c5e5-4546-a992-91be6914d73c" />
+
 </details>
 
 
