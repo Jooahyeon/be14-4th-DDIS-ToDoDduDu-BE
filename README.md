@@ -57,7 +57,9 @@
    - 커뮤니티 운영 안정성 확보
 
 ---
+<pre lang="markdown"> ## 🛠 Tech Stack ### 🚀 Frontend ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D) ![Pinia](https://img.shields.io/badge/Pinia-ffe600?style=for-the-badge&logo=pinia&logoColor=black) ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge) ![Socket.IO](https://img.shields.io/badge/Socket.IO-000000?style=for-the-badge&logo=socket.io) ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white) ### ⚙️ Backend ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white) ![JPA](https://img.shields.io/badge/JPA-007ACC?style=for-the-badge) ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white) ![MyBatis](https://img.shields.io/badge/MyBatis-3D2C00?style=for-the-badge) ![Spring Security](https://img.shields.io/badge/Spring%20Security-4CAF50?style=for-the-badge&logo=springsecurity&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white) ![STOMP](https://img.shields.io/badge/STOMP-over_WebSocket-61DAFB?style=for-the-badge) ### 🗃 Database ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white) ### 🎨 Design ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) ### 🧪 DevOps / Tools ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white) ![Argo CD](https://img.shields.io/badge/Argo--CD-1976D2?style=for-the-badge&logo=argo&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) ![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white) ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white) </pre>
 
+---
 ## 🛠️ 주요 기능
 
 <details>
@@ -532,13 +534,131 @@ pipeline {
 
 </details>
 
-🐳 Docker/Compose 설정
+<details>
+```
+<details>
+   <summary>아르곤 파이프라인</summary>
+   
+   ```groovy
+   pipeline {
+    agent any
 
-실행 환경 컨테이너화 구성
+    tools {
+        gradle 'gradle'
+        jdk 'openJDK17'
+    }
 
-/deployment/docker-compose.yml
+    environment {
+        SOURCE_GITHUB_URL = 'https://github.com/TEAM-DDIS/be14-4th-DDIS-BE.git'
+        MANIFESTS_GITHUB_URL = 'https://github.com/TEAM-DDIS/DDIS-manifests.git'
+        GIT_USERNAME = 'tommy8969'
+        GIT_EMAIL = 'tommy8969@naver.com'
+    }
 
+    stages {
+        stage('Preparation') {
+            steps {
+                script {
+                    if (isUnix()) {
+                        sh 'docker --version'
+                    } else {
+                        bat 'docker --version'
+                    }
+                }
+            }
+        }
 
-🛠️ 배포 가이드
+        stage('Source Build') {
+            steps {
+                git branch: 'dev', url: "${env.SOURCE_GITHUB_URL}"
+                script {
+                    if (isUnix()) {
+                        sh "chmod +x ./DDIS_Project/gradlew"
+                        sh "./DDIS_Project/gradlew clean build"
+                    } else {
+                        bat "cd DDIS_Project && gradlew.bat clean build -x test"
+                    }
+                }
+            }
+        }
 
-EC2, S3, Nginx 등 환경 세팅 방법
+        stage('Container Build and Push') {
+            steps {
+                script {
+                    withCredentials([usernamePassword(credentialsId: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                        if (isUnix()) {
+                            sh "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number} DDIS_Project"
+                            sh "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:latest DDIS_Project"
+                            sh "docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}"
+                            sh "docker push ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number}"
+                            sh "docker push ${DOCKER_USER}/k8s_ddis_boot:latest"
+                        } else {
+                            bat "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number} DDIS_Project"
+                            bat "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:latest DDIS_Project"
+                            bat "docker login -u %DOCKER_USER% -p %DOCKER_PASS%"
+                            bat "docker push ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number}"
+                            bat "docker push ${DOCKER_USER}/k8s_ddis_boot:latest"
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('K8S Manifest Update') {
+            steps {
+                git credentialsId: 'github',
+                    url: "${env.MANIFESTS_GITHUB_URL}",
+                    branch: 'main'
+
+                script {
+                    withCredentials([usernamePassword(credentialsId: 'github', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS')]) {
+                        def githubUrl = env.MANIFESTS_GITHUB_URL.replace('https://', '')
+                        if (isUnix()) {
+                            sh "sed -i 's/k8s_ddis_boot:.*/k8s_ddis_boot:${currentBuild.number}/g' backend-deployment.yml"
+                            sh "git add backend-deployment.yml"
+                            sh "git config --global user.name '${env.GIT_USERNAME}'"
+                            sh "git config --global user.email '${env.GIT_EMAIL}'"
+                            sh "git commit -m '[UPDATE] ${currentBuild.number} image versioning'"
+                            sh "git push https://${GIT_USER}:${GIT_PASS}@${githubUrl} main"
+                        } else {
+                            bat "powershell -Command \"(Get-Content backend-deployment.yml) -replace 'k8s_ddis_boot:.*', 'k8s_ddis_boot:${currentBuild.number}' | Set-Content backend-deployment.yml\""
+                            bat "git add backend-deployment.yml"
+                            bat "git config --global user.name '${env.GIT_USERNAME}'"
+                            bat "git config --global user.email '${env.GIT_EMAIL}'"
+                            bat "git commit -m \"[UPDATE] ${currentBuild.number} image versioning\""
+                            bat "git push https://%GIT_USER%:%GIT_PASS%@${githubUrl} main"
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            script {
+                if (isUnix()) {
+                    sh 'docker logout'
+                } else {
+                    bat 'docker logout'
+                }
+            }
+        }
+        success {
+            echo 'Pipeline succeeded!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
+    }
+}
+
+</details>
+```
+
+<details>
+   <summary>테스트 결과</summary>
+
+   ![KakaoTalk_20250503_234028435](https://github.com/user-attachments/assets/d94547c8-b8e6-4604-ab9a-44c254cf9f4f)
+
+</details>
