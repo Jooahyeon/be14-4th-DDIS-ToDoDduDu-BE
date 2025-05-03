@@ -98,15 +98,15 @@
 
 🎯 WBS
 
-전체 개발 일정 및 태스크 구조
 
-/docs/wbs.pdf
+![image](https://github.com/user-attachments/assets/e1c450a4-9a73-409f-b32f-8e0871d19266)
+
 
 🧾 요구사항 명세서
 
-기능 정의, 예외처리 등 상세 요구사항
 
-/docs/requirements.md
+![image](https://github.com/user-attachments/assets/210b3112-034e-48d5-8d7f-c166ea02d518)
+
 
 📑 플로우차트
 
