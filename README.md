@@ -443,7 +443,90 @@
 <details>
    <summary>젠킨스 파이프라인</summary>
 
-  <pre lang="markdown"> ```groovy pipeline { agent any tools { gradle 'gradle' jdk 'openJDK17' } environment { GITHUB_URL = 'https://github.com/TEAM-DDIS/be14-4th-DDIS-BE.git' } stages { stage('Preparation') { steps { script { if (isUnix()) { sh 'docker --version' } else { bat 'docker --version' } } } } stage('Source Build') { steps { git branch: 'dev', url: "${env.GITHUB_URL}" script { if (isUnix()) { sh "chmod +x ./DDIS_Project/gradlew" sh "./DDIS_Project/gradlew clean build" } else { bat "cd DDIS_Project && gradlew.bat clean build -x test" } } } } stage('Container Build and Push') { steps { script { withCredentials([usernamePassword(credentialsId: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) { if (isUnix()) { sh "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number} DDIS_Project" sh "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:latest DDIS_Project" sh "docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}" sh "docker push ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number}" sh "docker push ${DOCKER_USER}/k8s_ddis_boot:latest" } else { bat "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number} DDIS_Project" bat "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:latest DDIS_Project" bat "docker login -u %DOCKER_USER% -p %DOCKER_PASS%" bat "docker push ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number}" bat "docker push ${DOCKER_USER}/k8s_ddis_boot:latest" } } } } } } post { always { script { if (isUnix()) { sh 'docker logout' } else { bat 'docker logout' } } } success { echo 'Pipeline succeeded!' } failure { echo 'Pipeline failed!' } } } ``` </pre>
+ pipeline {
+agent any
+
+
+tools {
+    gradle 'gradle'
+    jdk 'openJDK17'
+}
+
+environment {
+    GITHUB_URL = 'https://github.com/TEAM-DDIS/be14-4th-DDIS-BE.git'
+}
+
+stages {
+    stage('Preparation') {
+        steps {
+            script {
+                if (isUnix()) {
+                    sh 'docker --version'
+                } else {
+                    bat 'docker --version'
+                }
+            }
+        }
+    }
+
+    stage('Source Build') {
+        steps {
+            git branch: 'dev', url: "${env.GITHUB_URL}"
+            script {
+                if (isUnix()) {
+                    sh "chmod +x ./DDIS_Project/gradlew"
+                    sh "./DDIS_Project/gradlew clean build"
+                } else {
+                    bat "cd DDIS_Project && gradlew.bat clean build -x test"
+                }
+            }
+        }
+    }
+
+    stage('Container Build and Push') {
+        steps {
+            script {
+                withCredentials([usernamePassword(credentialsId: 'DOCKERHUB_PASSWORD', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    if (isUnix()) {
+                        sh "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number} DDIS_Project"
+                        sh "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:latest DDIS_Project"
+                        sh "docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}"
+                        sh "docker push ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number}"
+                        sh "docker push ${DOCKER_USER}/k8s_ddis_boot:latest"
+                    } else {
+                        bat "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number} DDIS_Project"
+                        bat "docker build -f DDIS_Project/Dockerfile -t ${DOCKER_USER}/k8s_ddis_boot:latest DDIS_Project"
+                        bat "docker login -u %DOCKER_USER% -p %DOCKER_PASS%"
+                        bat "docker push ${DOCKER_USER}/k8s_ddis_boot:${currentBuild.number}"
+                        bat "docker push ${DOCKER_USER}/k8s_ddis_boot:latest"
+                    }
+                }
+            }
+        }
+    }
+}
+
+post {
+    always {
+        script {
+            if (isUnix()) {
+                sh 'docker logout'
+            } else {
+                bat 'docker logout'
+            }
+        }
+    }
+    success {
+        echo 'Pipeline succeeded!'
+    }
+    failure {
+        echo 'Pipeline failed!'
+    }
+}
+
+
+}
+
 
 </details>
 <details>
