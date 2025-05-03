@@ -129,9 +129,10 @@
 
 🧮 DB 모델링 (ERD)
 
-테이블 관계도, 정규화, 제약조건
 
-/docs/db-modeling.png
+![image](https://github.com/user-attachments/assets/9aa2ce12-7f4f-4cac-b511-dae18454da66)
+
+
 
 🎨 UI/UX 설계
 
