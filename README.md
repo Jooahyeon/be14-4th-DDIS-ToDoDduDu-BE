@@ -95,13 +95,6 @@
 
 📄 프로젝트 문서 모음
 
-📚 기획 & 요구사항
-
-문서명
-
-설명
-
-링크
 
 🎯 WBS
 
@@ -117,15 +110,19 @@
 
 📑 플로우차트
 
-사용자 흐름, 데이터 흐름도
+
 
 /docs/flowchart.png
 
 🧱 DDD 설계
 
-도메인 모델, 어그리게잇, 서비스 계층 구조
 
-/docs/ddd.md
+![image](https://github.com/user-attachments/assets/01c87105-649e-4f58-a5f2-49d0592925b8)
+
+
+![image](https://github.com/user-attachments/assets/f28c8214-c184-4b2b-9d2e-3c62aab0a0b2)
+
+
 
 🧮 DB 모델링 (ERD)
 
@@ -206,11 +203,6 @@ GitHub Actions 기반 자동화 흐름
 
 /deployment/docker-compose.yml
 
-☁️ 인프라 아키텍처
-
-BE, FE, DB, Reverse Proxy 등 구성도
-
-/docs/infra-architecture.png
 
 🛠️ 배포 가이드
 
