@@ -16,7 +16,7 @@
 | [![이성준](https://avatars.githubusercontent.com/u/00000000?s=100)](https://github.com/) | [![김OO](https://avatars.githubusercontent.com/u/11111111?s=100)](https://github.com/github-id1) | [![박OO](https://avatars.githubusercontent.com/u/22222222?s=100)](https://github.com/github-id2) |
 |:--:|:--:|:--:|
 | 이성준 | 김OO | 박OO |
-| [@1214alex](https://github.com/tommy8969) | [@github-id1](https://github.com/github-id1) | [@github-id2](https://github.com/github-id2) |
+| [@1214alex](https://github.com/1214alex) | [@github-id1](https://github.com/github-id1) | [@github-id2](https://github.com/github-id2) |
 
 | [![최OO](https://avatars.githubusercontent.com/u/33333333?s=100)](https://github.com/github-id3) | [![정OO](https://avatars.githubusercontent.com/u/44444444?s=100)](https://github.com/github-id4) | [![한OO](https://avatars.githubusercontent.com/u/55555555?s=100)](https://github.com/github-id5) |
 |:--:|:--:|:--:|
