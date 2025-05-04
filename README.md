@@ -47,7 +47,7 @@
 
 # 기획 의도
 
-## 📌 프로젝트 목표
+### 📌 프로젝트 목표
 
 > **“혼자는 어려워도, 함께하면 지켜낼 수 있어요.”**  
 Todo-Ddudo는 협업 기반의 To-do 실천을 통해  
@@ -55,7 +55,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 
 ---
 
-## 📌 서비스 개요
+### 📌 서비스 개요
 
 **Todo-Ddudu**는 사용자들이 **목표 달성을 위해 함께 To-do를 실천**할 수 있는  
 **협업 기반의 소셜 플랫폼**입니다.  
@@ -64,7 +64,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 
 ---
 
-## 📌 서비스 배경
+### 📌 서비스 배경
 
 - 🙇‍♀️ 혼자서는 지키기 어려운 계획  
 - 💬 친구들과의 약속은 지켜내는 나  
@@ -76,7 +76,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 
 ---
 
-## 📌 서비스 설명
+### 📌 서비스 설명
 
 1. 회원가입 및 로그인 (소셜 로그인 포함)  
 2. 모집 게시글로 공동 목표 멤버 모집  
@@ -87,7 +87,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 
 ---
 
-## Tech Stack
+# Tech Stack
 
 > 프론트엔드(Vue.js)와 백엔드(Spring Boot)가 완전히 분리된 구조이며,  
 > 실시간 채팅, 통계 시각화, JWT 인증, CI/CD 파이프라인 및 GitOps 배포까지 통합된 풀스택 프로젝트입니다.
@@ -172,7 +172,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 
 ---
 
-## 주요 기능
+# 주요 기능
 
 <details>
   <summary>회원가입</summary>
@@ -283,7 +283,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 ---
 
 
-## UI/UX 설계
+# UI/UX 설계
 
 <details>
    <summary>🖼️ 와이어프레임 </summary>
@@ -526,7 +526,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 
 ---
 
-## CI/CD 설계
+# CI/CD 설계
 
 <details>
    <summary>아키텍쳐</summary>
@@ -762,9 +762,12 @@ pipeline {
 
 ---
 
-### 설계 문서  
+# 설계 문서  
+
+## 전체 설계 문서
 [📄 Google 전체 설계 문서 바로가기](https://docs.google.com/spreadsheets/d/1PUN3A37981MhDW54SWZep5-JsxbDLgIV7gaxJtn7848/edit?gid=0#gid=0)
 
+## DDD
 <details>
    <summary>Bounded Context</summary>
    <img width="916" alt="image" src="https://github.com/user-attachments/assets/fca502bf-17f7-4f4b-b541-d05762d14f97" />
@@ -775,6 +778,7 @@ pipeline {
    <img width="905" alt="image" src="https://github.com/user-attachments/assets/9620515e-b6cd-4f0a-aabd-26e0a349a971" />
 </details>
 
+## 모델링
 <details>
    <summary>물리적 모델링</summary>
    <img width="876" alt="image" src="https://github.com/user-attachments/assets/43c71472-0693-447f-8d47-48728facacb5" />
