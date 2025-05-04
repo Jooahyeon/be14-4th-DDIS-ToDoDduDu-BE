@@ -12,20 +12,18 @@
 
 ---
 
-
 ## 📚 목차 (Table of Contents)
 
-- [DDIS 팀 소개](#meet-the-ddis-team-members)  
-- [기획 의도](#기획-의도)
-- [Tech Stack](#Tech-Stack) 
-- [주요 기능 소개](#주요-기능-소개)  
-- [API 명세서](#API-명세서)  
-- [CI/CD 설계](#CI/CD-설계)
-- [팀원 회고](#팀원-회고)
+[DDIS 팀 소개](#meet-the-ddis-team-members)  
+[기획 의도](#기획-의도)
+[Tech Stack](#tech-stack)  
+[주요 기능 소개](#주요-기능)  
+[UI/UX 설계](#uiux-설계)  
+[CI/CD 설계](#cicd-설계)  
+[팀원 회고](#팀원-회고)
+[설계문서](#설계-문서)
 
 ---
-
-
 
 
 ## Meet the **DDIS** Team Members
@@ -94,14 +92,14 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 > 프론트엔드(Vue.js)와 백엔드(Spring Boot)가 완전히 분리된 구조이며,  
 > 실시간 채팅, 통계 시각화, JWT 인증, CI/CD 파이프라인 및 GitOps 배포까지 통합된 풀스택 프로젝트입니다.
 
---
+***
 
 ### 🎨 Design & Modeling
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![draw.io](https://img.shields.io/badge/draw.io-F08705?style=for-the-badge&logo=diagramsdotnet&logoColor=white)
 ![DA#](https://img.shields.io/badge/DA%23-ERD--Modeling-005CA9?style=for-the-badge)
 
---
+***
 
 ### 🚀 Frontend
 ![Vue.js](https://img.shields.io/badge/Vue.js-3.x-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
@@ -118,7 +116,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 ![STOMP.js](https://img.shields.io/badge/STOMP.js-Over--WebSocket-6e00ff?style=for-the-badge)
 ![Vite](https://img.shields.io/badge/Vite-Bundler-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
---
+***
 
 ### ⚙️ Backend
 ![Java](https://img.shields.io/badge/Java-17-007396?style=for-the-badge&logo=java&logoColor=white)
@@ -133,7 +131,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 ![Spring Validation](https://img.shields.io/badge/Spring--Validation-Form--Check-0d9488?style=for-the-badge)
 ![Spring Devtools](https://img.shields.io/badge/Spring--Devtools-Hot--Reload-FF5722?style=for-the-badge)
 
----
+***
 
 ### 🧩 ORM & DB Frameworks
 ![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-ORM-59666C?style=for-the-badge)
@@ -141,13 +139,13 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 ![MyBatis](https://img.shields.io/badge/MyBatis-SQL--Mapper-3D2C00?style=for-the-badge)
 ![ModelMapper](https://img.shields.io/badge/ModelMapper-DTO--Mapper-0d9488?style=for-the-badge)
 
----
+***
 
 ### 🗃 Database
 ![MariaDB](https://img.shields.io/badge/MariaDB-Relational--DB-003545?style=for-the-badge&logo=mariadb)
 ![Redis](https://img.shields.io/badge/Redis-Session--Cache-DC382D?style=for-the-badge&logo=redis)
 
----
+***
 
 ### 🧪 Testing
 ![JUnit5](https://img.shields.io/badge/JUnit5-Unit--Test-25A162?style=for-the-badge&logo=junit5)
@@ -155,7 +153,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 ![MyBatis Test](https://img.shields.io/badge/MyBatis--Test-Mapper--Validation-FF6600?style=for-the-badge)
 ![Spring Security Test](https://img.shields.io/badge/Spring--Security--Test-Mock--Auth-43A047?style=for-the-badge)
 
----
+***
 
 ### ⚙️ DevOps / CI/CD
 ![Jenkins](https://img.shields.io/badge/Jenkins-CI--Pipeline-D24939?style=for-the-badge&logo=jenkins)
@@ -163,7 +161,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes)
 ![Argo CD](https://img.shields.io/badge/ArgoCD-GitOps--Deploy-1976D2?style=for-the-badge&logo=argo)
 
----
+***
 
 ### 🛠 Tools
 ![Git](https://img.shields.io/badge/Git-Version--Control-F05032?style=for-the-badge&logo=git)
@@ -172,8 +170,8 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 ![VSCode](https://img.shields.io/badge/VS%20Code-Frontend--Dev-007ACC?style=for-the-badge&logo=visualstudiocode)
 ![Notion](https://img.shields.io/badge/Notion-Docs--&--WBS-000000?style=for-the-badge&logo=notion)
 
-
 ---
+
 ## 주요 기능
 
 <details>
@@ -281,6 +279,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 ![프로필_회원정보수정](https://github.com/user-attachments/assets/69bb354e-9099-4115-85a0-13a86724f8cc)
 
 </details>
+
 ---
 
 
@@ -417,7 +416,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
    <summary>공지사항 조회 - 관리자</summary>
 
 ![image](https://github.com/user-attachments/assets/50cdb4e8-8227-48a6-87ca-80b08295b3c2)
-   ㅍ  
+     
 </details>
 
 <details>
@@ -522,28 +521,12 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 ![image](https://github.com/user-attachments/assets/80b26efc-6c9e-4b8c-a286-7a196945cad4)
    
 </details>
----
 
 </details>
 
-
-
-
-
-
-
-
-📘 API 명세서
-
-엔드포인트, 응답 구조, 인증 방식 등
-
-/docs/api-spec.yaml
-
 ---
 
-
-
-🧱 CI/CD 설계
+## CI/CD 설계
 
 <details>
    <summary>아키텍쳐</summary>
@@ -646,6 +629,8 @@ pipeline {
 
 <details>
 ```
+ </details>
+ 
 <details>
    <summary>아르곤 파이프라인</summary>
    
@@ -765,17 +750,37 @@ pipeline {
 
 </details>
 ```
+</details>
 
-<details>
+ <details>
    <summary>테스트 결과</summary>
 
    ![KakaoTalk_20250503_234028435](https://github.com/user-attachments/assets/d94547c8-b8e6-4604-ab9a-44c254cf9f4f)
 
+ </details>
 </details>
 
 ---
 
-## 📝 팀원 회고
+### 설계 문서  
+[📄 Google 전체 설계 문서 바로가기](https://docs.google.com/spreadsheets/d/1PUN3A37981MhDW54SWZep5-JsxbDLgIV7gaxJtn7848/edit?gid=0#gid=0)
+
+<details>
+   <summary>Bounded Context</summary>
+  
+</details>
+
+<details>
+   <summary>Context Map</summary>
+ 
+</details>
+   
+
+
+
+---
+
+## 팀원 회고
 
 | 이름   | 회고 및 느낀 점 |
 |--------|----------------|
