@@ -1,35 +1,59 @@
-# be14-4th-DDIS-BE
-백엔드 레포입니다.
+
+
+
+# ✨ Todo-Ddudo!  
+> 함께 목표를 실천하는 협업형 To-do 플랫폼
+
+---
 
 
 ![image](https://github.com/user-attachments/assets/bb7604bb-9069-482c-a233-37a47f0930e3)
 
 
-### 👥 Meet the ** DDIS ** Team Members
+---
 
-<center>
 
-   
+## 📚 목차 (Table of Contents)
 
-## 👥 Team Members
+- [DDIS 팀 소개](#meet-the-ddis-team-members)  
+- [기획 의도](#기획-의도)
+- [Tech Stack](#Tech-Stack) 
+- [주요 기능 소개](#주요-기능-소개)  
+- [API 명세서](#API-명세서)  
+- [CI/CD 설계](#CI/CD-설계)
+- [팀원 회고](#팀원-회고)
 
-| [![이성준] ![my-notion-face-portrait](https://github.com/user-attachments/assets/c878ec33-a47f-4407-a037-2589a0fa5785) | [![김OO](https://avatars.githubusercontent.com/u/11111111?s=100)](https://github.com/github-id1) | [![박OO](https://avatars.githubusercontent.com/u/22222222?s=100)](https://github.com/github-id2) |
-|:--:|:--:|:--:|
-| 이성준 | 강이도은 | 고도연 |
-| [@1214alex](https://github.com/1214alex) | [@github-id1](https://github.com/github-id1) | [@github-id2](https://github.com/github-id2) |
+---
 
-| [![최OO](https://avatars.githubusercontent.com/u/33333333?s=100)](https://github.com/github-id3) | [![정OO](https://avatars.githubusercontent.com/u/44444444?s=100)](https://github.com/github-id4) | [![한OO](https://avatars.githubusercontent.com/u/55555555?s=100)](https://github.com/github-id5) |
-|:--:|:--:|:--:|
-| 김기종 | 주아현 | 한윤상 |
-| [@github-id3](https://github.com/github-id3) | [@github-id4](https://github.com/github-id4) | [@github-id5](https://github.com/github-id5) |
 
+
+
+## Meet the **DDIS** Team Members
+
+<table align="center">
+  <tr>
+    <td align="center"><img src="https://github.com/user-attachments/assets/c878ec33-a47f-4407-a037-2589a0fa5785" width="400"/><br/>이성준<br/><a href="https://github.com/1214alex">@1214alex</a></td>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/11111111?s=100"/><br/>강이도은<br/><a href="https://github.com/github-id1">@github-id1</a></td>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/22222222?s=100"/><br/>고도연<br/><a href="https://github.com/github-id2" width="400">@github-id2</a></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/33333333?s=100"/><br/>김기종<br/><a href="https://github.com/github-id3">@github-id3</a></td>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/44444444?s=100"/><br/>주아현<br/><a href="https://github.com/github-id4">@github-id4</a></td>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/55555555?s=100"/><br/>한윤상<br/><a href="https://github.com/github-id5">@github-id5</a></td>
+  </tr>
+</table>
+
+---
 
 </center>
 
+# 기획 의도
 
-# ✨ Todo-Ddudu
+## 📌 프로젝트 목표
 
-> **목표를 함께 실천하는 협업형 To-do 플랫폼**
+> **“혼자는 어려워도, 함께하면 지켜낼 수 있어요.”**  
+Todo-Ddudo는 협업 기반의 To-do 실천을 통해  
+**사용자의 꾸준한 습관 형성과 목표 달성**을 돕는 소셜 플랫폼입니다.
 
 ---
 
@@ -42,49 +66,42 @@
 
 ---
 
-## 🎯 서비스 배경
+## 📌 서비스 배경
 
-🙇‍♀️ 혼자서는 지키기 어려운 계획  
-💬 친구들과의 약속은 지켜내는 나  
-📉 단순한 체크리스트 앱으로는 부족했던 피드백과 자극
+- 🙇‍♀️ 혼자서는 지키기 어려운 계획  
+- 💬 친구들과의 약속은 지켜내는 나  
+- 📉 단순한 체크리스트 앱으로는 부족했던 피드백과 자극
 
-> **Todo-Ddudu는 ‘함께하는 실천’에 초점을 맞춘 To-do 플랫폼입니다.**  
-> 공동 목표 설정 → 인증 → 승인 → 통계 피드백까지!  
-> **실천을 위한 선순환 구조**를 제공합니다.
-
----
-
-## 💡 서비스 설명
-
-1. **회원가입 및 로그인**
-   - 일반 계정 및 소셜 로그인 지원
-2. **모집 게시글 작성**
-   - 공동 목표에 참여할 멤버 모집
-3. **공동 To-do 방 자동 생성**
-   - 인원 충원 또는 모집 마감 시 자동 생성
-4. **인증 및 승인(Approve)**
-   - 텍스트/이미지 인증, 피드백 댓글/이모지 리액션
-5. **캘린더/통계**
-   - 달성률 색상 시각화 및 활동 피드백 제공
-6. **신고 및 관리 시스템**
-   - 커뮤니티 운영 안정성 확보
+> Todo-Ddudu는 ‘**함께하는 실천**’에 초점을 맞춘 To-do 플랫폼입니다.  
+공동 목표 설정 → 인증 → 승인 → 통계 피드백까지!  
+**실천을 위한 선순환 구조**를 제공합니다.
 
 ---
 
+## 📌 서비스 설명
 
-## 🛠 Tech Stack
+1. 회원가입 및 로그인 (소셜 로그인 포함)  
+2. 모집 게시글로 공동 목표 멤버 모집  
+3. 공동 To-do 방 자동 생성  
+4. 인증 시스템(텍스트/이미지 + 피드백 기능)  
+5. 달성률 및 피드백 통계 시각화  
+6. 커뮤니티 신고/관리 시스템
+
+---
+
+## Tech Stack
 
 > 프론트엔드(Vue.js)와 백엔드(Spring Boot)가 완전히 분리된 구조이며,  
 > 실시간 채팅, 통계 시각화, JWT 인증, CI/CD 파이프라인 및 GitOps 배포까지 통합된 풀스택 프로젝트입니다.
 
----
+--
 
 ### 🎨 Design & Modeling
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![draw.io](https://img.shields.io/badge/draw.io-F08705?style=for-the-badge&logo=diagramsdotnet&logoColor=white)
 ![DA#](https://img.shields.io/badge/DA%23-ERD--Modeling-005CA9?style=for-the-badge)
 
----
+--
 
 ### 🚀 Frontend
 ![Vue.js](https://img.shields.io/badge/Vue.js-3.x-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
@@ -101,7 +118,7 @@
 ![STOMP.js](https://img.shields.io/badge/STOMP.js-Over--WebSocket-6e00ff?style=for-the-badge)
 ![Vite](https://img.shields.io/badge/Vite-Bundler-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
----
+--
 
 ### ⚙️ Backend
 ![Java](https://img.shields.io/badge/Java-17-007396?style=for-the-badge&logo=java&logoColor=white)
@@ -156,9 +173,8 @@
 ![Notion](https://img.shields.io/badge/Notion-Docs--&--WBS-000000?style=for-the-badge&logo=notion)
 
 
-
 ---
-## 🛠️ 주요 기능
+## 주요 기능
 
 <details>
   <summary>회원가입</summary>
@@ -265,15 +281,10 @@
 ![프로필_회원정보수정](https://github.com/user-attachments/assets/69bb354e-9099-4115-85a0-13a86724f8cc)
 
 </details>
+---
 
 
-🎨 UI/UX 설계
-
-문서명
-
-설명
-
-링크
+## UI/UX 설계
 
 <details>
    <summary>🖼️ 와이어프레임 </summary>
@@ -511,6 +522,7 @@
 ![image](https://github.com/user-attachments/assets/80b26efc-6c9e-4b8c-a286-7a196945cad4)
    
 </details>
+---
 
 </details>
 
@@ -527,12 +539,12 @@
 
 /docs/api-spec.yaml
 
-
+---
 
 
 
 🧱 CI/CD 설계
----
+
 <details>
    <summary>아키텍쳐</summary>
    
@@ -760,3 +772,17 @@ pipeline {
    ![KakaoTalk_20250503_234028435](https://github.com/user-attachments/assets/d94547c8-b8e6-4604-ab9a-44c254cf9f4f)
 
 </details>
+
+---
+
+## 📝 팀원 회고
+
+| 이름   | 회고 및 느낀 점 |
+|--------|----------------|
+| 이성준 |                |
+| 강이도은 |               |
+| 고도연 |                |
+| 김기종 |                |
+| 주아현 |                |
+| 한윤상 |                |
+
