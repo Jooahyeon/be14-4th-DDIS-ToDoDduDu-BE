@@ -14,14 +14,14 @@
 
 ## 📚 목차 (Table of Contents)
 
-[DDIS 팀 소개](#meet-the-ddis-team-members)  
-[기획 의도](#기획-의도)
-[Tech Stack](#tech-stack)  
-[주요 기능 소개](#주요-기능)  
-[UI/UX 설계](#uiux-설계)  
-[CI/CD 설계](#cicd-설계)  
-[팀원 회고](#팀원-회고)
-[설계문서](#설계-문서)
+- [DDIS 팀 소개](#meet-the-ddis-team-members)  
+- [기획 의도](#기획-의도)
+- [Tech Stack](#tech-stack)  
+- [주요 기능 소개](#주요-기능)  
+- [UI/UX 설계](#uiux-설계)  
+- [CI/CD 설계](#cicd-설계)  
+- [팀원 회고](#팀원-회고)
+- [설계문서](#설계-문서)
 
 ---
 
@@ -767,18 +767,23 @@ pipeline {
 
 <details>
    <summary>Bounded Context</summary>
-  
+   <img width="916" alt="image" src="https://github.com/user-attachments/assets/fca502bf-17f7-4f4b-b541-d05762d14f97" />
 </details>
 
 <details>
    <summary>Context Map</summary>
- 
+   <img width="905" alt="image" src="https://github.com/user-attachments/assets/9620515e-b6cd-4f0a-aabd-26e0a349a971" />
 </details>
+
+<details>
+   <summary>물리적 모델링</summary>
+   <img width="876" alt="image" src="https://github.com/user-attachments/assets/43c71472-0693-447f-8d47-48728facacb5" />
+</details>
+
    
 
-
-
 ---
+
 
 ## 팀원 회고
 
