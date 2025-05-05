@@ -32,7 +32,7 @@
   <tr>
     <td align="center"><img src="https://github.com/user-attachments/assets/c878ec33-a47f-4407-a037-2589a0fa5785" width="400"/><br/>이성준<br/><a href="https://github.com/1214alex">@1214alex</a></td>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/11111111?s=100"/><br/>강이도은<br/><a href="https://github.com/github-id1">@github-id1</a></td>
-    <td align="center"><img src="https://avatars.githubusercontent.com/u/22222222?s=100"/><br/>고도연<br/><a href="https://github.com/github-id2" width="400">@github-id2</a></td>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/66666666?s=100"/><br/>고도연<br/><a href="https://github.com/github-id2" width="400">@github-id2</a></td>
   </tr>
   <tr>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/33333333?s=100"/><br/>김기종<br/><a href="https://github.com/github-id3">@github-id3</a></td>
