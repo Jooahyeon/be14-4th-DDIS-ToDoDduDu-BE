@@ -101,9 +101,10 @@ public class RoomServiceImpl implements RoomService {
                 .build();
 
         roomRepository.save(rooms);
-
+        Rooms syncedRoom = roomRepository.findById(postNum)
+                .orElseThrow(() -> new IllegalArgumentException("해당 방 없음"));
         // 채팅방 생성 및 방장 등록
-        ChatRoomEntity chatRoom = createChatRoom(rooms);
+        ChatRoomEntity chatRoom = createChatRoom(syncedRoom);
         createChatRoomUser(chatRoom, roomDTO.getClientNum());
 
         // 게시글 작성자를 포함한 지원자 목록 가져오기
@@ -116,7 +117,7 @@ public class RoomServiceImpl implements RoomService {
 
 
             Members member = Members.builder()
-                    .room(rooms)
+                    .room(syncedRoom)
                     .post(posts)
                     .client(clients)
                     .build();
@@ -125,7 +126,7 @@ public class RoomServiceImpl implements RoomService {
         }
 
         // 🔹 2. 채팅방 유저들 등록 (공통 Room의 모든 멤버 대상으로)
-        List<Members> roomMembers = memberRepository.findByRoom_RoomNum(rooms.getRoomNum());
+        List<Members> roomMembers = memberRepository.findByRoom_RoomNum(syncedRoom.getRoomNum());
         for (Members member : roomMembers) {
             ChatRoomUserEntity chatRoomUser = ChatRoomUserEntity.builder()
                     .chatRoom(chatRoom)
@@ -136,12 +137,10 @@ public class RoomServiceImpl implements RoomService {
             chatRoomUserRepository.save(chatRoomUser);
         }
 
-        Rooms roomnum = roomRepository.findById(postNum)
-                .orElseThrow(() -> new IllegalArgumentException("해당 방 없음"));
 
         // 게시글 작성자도 멤버로 포함 (방장)
         Members leader = Members.builder()
-                .room(roomnum)
+                .room(syncedRoom)
                 .post(posts)
                 .client(client)
                 .build();
@@ -149,11 +148,11 @@ public class RoomServiceImpl implements RoomService {
         memberCount++;
 
         // 인원수 및 승인 필수 인원 업데이트
-        rooms.setMemberCount(memberCount);
-        rooms.setApproveRequiredCount(Math.max(1, memberCount / 2));
-        roomRepository.save(rooms);
+        syncedRoom.setMemberCount(memberCount);
+        syncedRoom.setApproveRequiredCount(Math.max(1, memberCount / 2));
+        roomRepository.save(syncedRoom);
 
-        return rooms;
+        return syncedRoom;
     }
 
 
