@@ -64,19 +64,13 @@ public class RoomServiceImpl implements RoomService {
         room.setApproveRequiredCount(count);
         roomRepository.save(room);
     }
-    // 공투방 생성
     @Override
     @Transactional
     public Rooms createRoom(CreateShareRoomDTO roomDTO) {
         String randomColor = pickRandomColor();
         Long postNum = roomDTO.getPostNum();
 
-
-
-// 여기서 하나씩 반복
-
-
-            // 게시글 가져오기
+        // 게시글 가져오기
         Post posts = postRepository.findById(postNum)
                 .orElseThrow(() -> new IllegalArgumentException("해당 게시글 없음"));
 
@@ -84,6 +78,7 @@ public class RoomServiceImpl implements RoomService {
         String formattedStartDate = now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         LocalDateTime endDate = now.plusDays(posts.getActivityTime());
         String formattedEndDate = endDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+
         Clients client = clientsRepository.findById(posts.getClientNum().getClientNum())
                 .orElseThrow(() -> new IllegalArgumentException("클라이언트 정보 없음"));
 
@@ -101,8 +96,10 @@ public class RoomServiceImpl implements RoomService {
                 .build();
 
         roomRepository.save(rooms);
+
         Rooms syncedRoom = roomRepository.findById(postNum)
                 .orElseThrow(() -> new IllegalArgumentException("해당 방 없음"));
+
         // 채팅방 생성 및 방장 등록
         ChatRoomEntity chatRoom = createChatRoom(syncedRoom);
         createChatRoomUser(chatRoom, roomDTO.getClientNum());
@@ -115,37 +112,27 @@ public class RoomServiceImpl implements RoomService {
             Clients clients = clientsRepository.findById(applicant.getClientNum())
                     .orElseThrow(() -> new IllegalArgumentException("해당 클라이언트 없음"));
 
-
             Members member = Members.builder()
                     .room(syncedRoom)
                     .post(posts)
                     .client(clients)
                     .build();
+
             memberRepository.save(member);
             memberCount++;
         }
 
-        // 🔹 2. 채팅방 유저들 등록 (공통 Room의 모든 멤버 대상으로)
+        // 🔹 채팅방 유저들 등록 (공통 Room의 모든 멤버 대상으로)
         List<Members> roomMembers = memberRepository.findByRoom_RoomNum(syncedRoom.getRoomNum());
         for (Members member : roomMembers) {
             ChatRoomUserEntity chatRoomUser = ChatRoomUserEntity.builder()
                     .chatRoom(chatRoom)
-                    .clientNum((long) member.getClient().getClientNum())  // 해당 멤버의 사용자 ID
+                    .clientNum((long) member.getClient().getClientNum())
                     .role("회원")
                     .lastMsgNum(null)
                     .build();
             chatRoomUserRepository.save(chatRoomUser);
         }
-
-
-        // 게시글 작성자도 멤버로 포함 (방장)
-        Members leader = Members.builder()
-                .room(syncedRoom)
-                .post(posts)
-                .client(client)
-                .build();
-        memberRepository.save(leader);
-        memberCount++;
 
         // 인원수 및 승인 필수 인원 업데이트
         syncedRoom.setMemberCount(memberCount);
@@ -154,6 +141,7 @@ public class RoomServiceImpl implements RoomService {
 
         return syncedRoom;
     }
+
 
 
     // ChatRoom 생성
