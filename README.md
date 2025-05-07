@@ -35,7 +35,7 @@
     <td align="center"><img src="https://avatars.githubusercontent.com/u/66666666?s=100"/><br/>고도연<br/><a href="https://github.com/github-id2" width="400">@github-id2</a></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://avatars.githubusercontent.com/u/33333333?s=100"/><br/>김기종<br/><a href="https://github.com/github-id3">@github-id3</a></td>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/33333333?s=100"/><br/>김기종<br/><a href="https://github.com/rrangeess">@rrangeess</a></td>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/44444444?s=100"/><br/>주아현<br/><a href="https://github.com/github-id4">@github-id4</a></td>
     <td align="center"><img src="https://avatars.githubusercontent.com/u/55555555?s=100"/><br/>한윤상<br/><a href="https://github.com/github-id5">@github-id5</a></td>
   </tr>
