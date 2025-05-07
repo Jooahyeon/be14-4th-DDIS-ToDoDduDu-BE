@@ -532,7 +532,7 @@ Todo-Ddudo는 협업 기반의 To-do 실천을 통해
 <details>
    <summary>아키텍쳐</summary>
    
-   ![KakaoTalk_20250503_231157971](https://github.com/user-attachments/assets/c7a648a5-49ae-4fee-ac6a-0062bba554c0)
+  ![systemarch](https://github.com/user-attachments/assets/27297ef1-f687-49a3-a9a3-c3f00c6bf6a1)
 
 </details>
 
@@ -620,20 +620,11 @@ pipeline {
         }
     }
 }
-
-
-</details>
-<details>
-   <summary>아르고 파이프라인</summary>
-
-</details>
-
-<details>
 ```
  </details>
  
 <details>
-   <summary>아르곤 파이프라인</summary>
+   <summary>아르고 파이프라인</summary>
    
    ```groovy
    pipeline {
@@ -748,8 +739,6 @@ pipeline {
         }
     }
 }
-
-</details>
 ```
 </details>
 
@@ -759,7 +748,6 @@ pipeline {
    ![KakaoTalk_20250503_234028435](https://github.com/user-attachments/assets/d94547c8-b8e6-4604-ab9a-44c254cf9f4f)
 
  </details>
-</details>
 
 ---
 
