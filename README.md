@@ -952,7 +952,7 @@ pipeline {
 ### 📌 FACTS (사실, 객관)
 - Spring Security 기반 JWT 인증 시스템을 설계하고 구현하였다.
 
-- 로그인 시 AccessToken과 RefreshToken을 발급하고, 토큰 만료 시 재발급이 가능하도록 RefreshToken을 Redis에 저장하였다.
+- 로그인 시 AccessToken과 RefreshToken을 발급하고, 토큰 만료 시 재발급이 가능하도록 RefreshToken을 설정하였다.
 
 - 이메일 인증 기능은 SMTP 서버를 통해 인증 메일을 발송하고, 사용자가 입력한 인증 코드를 Redis에 저장된 값과 비교해 유효성을 검증하도록 설계하였다.
 
